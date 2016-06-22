@@ -4,7 +4,7 @@ require './lib/plane'
 
 describe Plane do 
 
-subject { described_class.new }
+subject(:plane) { described_class.new }
 
 	it 'If I want a plane to land it must have a flying status' do
 		expect(subject).to be_flying
